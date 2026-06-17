@@ -5,6 +5,8 @@ with Stack; use Stack;
 procedure Game
   with SPARK_Mode => On
 is
+   -- Version 2: Fixed gnatprove warnings in dependent packages
+
    Player_Turn : Boolean := True;
 begin
    Initialize; -- bug, forget the initialization?
