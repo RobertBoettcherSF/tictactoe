@@ -1,6 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-procedure Tictactoe is
+procedure Main is
 
    -- Game types
    type Slot is (Empty, Player, Computer);
@@ -250,4 +250,4 @@ begin
          Put_Line ("What's the other kind?");
    end case;
 
-end Tictactoe;
+end Main;

@@ -2,11 +2,7 @@ project Tictactoe is
 
    for Source_Dirs use (".");
    for Object_Dir use "obj";
-   for Main use ("tictactoe.adb");
-
-   package Builder is
-      for Switches ("ada") use ("-g");
-   end Builder;
+   for Main use ("main.adb");
 
    package Linker is
       for Switches ("ada") use ("-g");
