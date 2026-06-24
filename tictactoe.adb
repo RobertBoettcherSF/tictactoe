@@ -1,7 +1,14 @@
 with Ada.Text_IO; use Ada.Text_IO;
-with Tictactoe_Types; use Tictactoe_Types;
 
 procedure Tictactoe is
+
+   -- Game types
+   type Slot is (Empty, Player, Computer);
+   type Pos is new Integer range 1 .. 3;
+   type Column is array (Pos) of Slot;
+   type Board is array (Pos) of Column;
+
+   Max_Size : constant := 9;
 
    My_Board : Board := (others => (others => Empty));
 
